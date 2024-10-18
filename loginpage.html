@@ -16,18 +16,36 @@
                 border-radius:20px;
                 background-color: white;
                 display:grid;
-                
+                padding:10px;
             }
 
           
 
             body{
                 background-color: black;
-                background-image: url('im2.jpg');
+                background-image: url('image.webp');
                 background-repeat:no-repeat;
                 background-size: auto-fill;
                 color:white;
+                grid-template-rows:1fr 1fr;
+               
+            }
+
+            .items{
               
+               background-color: yellow;
+               border:3px solid black;
+               color:black;
+            }
+
+            #tut{
+
+                width:300px;
+                height:30px;
+                margin-left:20px;
+                border-radius:5px;
+                border:2px solid black;
+
             }
 
         </style>
@@ -37,6 +55,11 @@
     <body>
         <div class="login">
             <div class="parent">
+                <div class="items username">
+                    <label><h2>LOGIN<h2></label><br>
+                    <input type="text" id="tut" value="Username">
+                </div>
+                <div class="items password"></div>
 
             </div>
         </div>

@@ -49,24 +49,62 @@ setInterval(changeBackground, 5000); // Change every 5 seconds
                 
                 width:400px;
                 border-radius:20px;
-                background-color: white;
-                
+                background-color:rgb(211, 208, 208);
+                border:1px solid black;
+             
+                display:grid;
+                grid-template-rows:1fr 1fr 1fr;
                 padding:10px;
+                
+
             }
-
-
-
             
 
-            #tut{
+            
+           .items{
+                
+                
+                 font-size: large;
+           }
 
-                width:300px;
-                height:30px;
-                margin-left:20px;
-                border-radius:5px;
-                border:2px solid black;
+           #user{
+                 margin-left :30px;
+                 margin-top:30px;
+                 width:330px;
+                 height:40px;
 
-            }
+
+           }
+
+           #password{
+                 margin-left :30px;
+                 margin-top:30px;
+                 width:330px;
+                 height:40px;
+
+
+           }
+
+           #button{
+            background-color: #4c77af;
+    border: none; 
+    color: white; 
+    height:40px;
+    width:90px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+
+    margin-left:270px;
+    margin-top:60px; 
+           }
+
+           #button:hover{
+            background-color: darkblue;
+           }
+            
+
 
         </style>
 
@@ -76,11 +114,20 @@ setInterval(changeBackground, 5000); // Change every 5 seconds
         <div class="login">
             <div class="parent">
                 <div class="items username">
-                    <label><h2>LOGIN<h2></label><br>
-                    <input type="text" id="tut" value="Username">
+                    Username<br>
+                    <input type="text" id="user" value="Username">
                 </div>
-                <div class="items password"></div>
+             
+                <div class="items password">
+                    Password<br>
+                    <input type="password" id="password" value="Username@9577">
+                </div>
 
+                <div class="items enter">
+                    <a href="https://www.instagram.com/abhay_singh.d" target="_blank"><i>Developer's profile(Click here)</i></a>
+                    <input type="button" id="Button" value="Enter">
+
+                </div>
             </div>
         </div>
     </body>

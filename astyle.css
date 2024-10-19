@@ -18,7 +18,7 @@ z-index: -1;
     display:grid;
     place-items:center;
     grid-auto-rows:minmax(400px,auto-fill);
-    margin-top:10%;
+    margin-top:5%;
     
 }
 .parent{

@@ -14,35 +14,25 @@
     </head>
 
     <body id="background">
-        <div class="login">
-            <div class="parent">
-                <div class="items message">
-                    <h1><center>WELCOME</center><h1>
+        <div class="whole-content">
+            <div class="login-page">
+                <div class="items login"><h1>Login</h1></div>
+                <div class="items user">
+                    <input type="text" id="username" placeholder="Username">
                 </div>
-                <div class="items username">
-                   
-                    <input type="text" id="user" value="Username">
-                </div>
-             
                 <div class="items password">
-                   
-                    <input type="password" id="password" value="Username@9577">
+                    <input type="password" id="password" placeholder="Password">
                 </div>
                 <div class="items show">
-                    <div id="show"><input type="checkbox" id="p"onclick="toggleInputType()">Show Password
+                    <input type="checkbox" id="show" onclick="format_changer()" >Show Password
                 </div>
-                </div>
-
                 <div class="items enter">
-                    
-                    <input type="button" id="Button" value="Enter">
-
+                    <a id="link1" href="mailto:abhaysinghsun@gmail.com?subject=Enter%20Your%20Username%20We%20will%20return%20Password">
+                    Forget Password?</a>
+                    <input type="button" id="enter" value="Enter" onclick="check()">
+                     
                 </div>
-
-
-                
             </div>
-            
         </div>
     </body>
 </hmtl>

@@ -1,26 +1,43 @@
-const images = [
+function format_changer()
+{
+  var passwordf=document.getElementById("password");
+  if(passwordf.type === "password"){
+    passwordf.type="text";
+  }
+  else{
+    passwordf="password";
+  }
+}
+
+function check()
+{
+  var password_fix=document.getElementById("password").value;
+  var username_fix=document.getElementById("username").value;
+  var length=password_fix.length;
+  console.log(length);
+  if (length < 8 && length!=0) {
+    alert("password must contain 8 characters.");
+  }
+  else if(password_fix.length === 0 || username_fix.length === 0){
+    alert("please fill the forum!");
+  }
+    
+  }
+
+  
+  const imagePaths = [
     'image2.jpg',
     'image3.jpg'
-  ];
-  
-  let index = 0;
-  
-  function changeBackground() {
-    const background = document.getElementById('background');
-    index = (index + 1) % images.length; // Loop through images
-    background.style.backgroundImage = `url(${images[index]})`;
+  ]; 
+
+  let currentIndex = 0;
+
+  function changeBackgroundImage() {
+    document.body.style.backgroundImage = `url(${imagePaths[currentIndex]})`;
+    currentIndex = (currentIndex + 1) % imagePaths.length; 
   }
-  
-  setInterval(changeBackground, 5000); // Change every 5 seconds
-  
-  
-    function toggleInputType() {
-      var inputElement = document.getElementById("password");
-      
-          if (inputElement.type === "password") {
-        inputElement.type = "text"; 
-          } else {
-        inputElement.type = "password"; 
-          }
-    }
+
+  setInterval(changeBackgroundImage, 3000);
+  changeBackgroundImage();
+
   

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopcart Header</title>
+    <style>
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .top-bar {
+            background-color: #004d32;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 20px;
+            font-size: 0.9em;
+        }
+
+        .top-bar .left,
+        .top-bar .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar .left span,
+        .top-bar .right span {
+            margin-right: 15px;
+        }
+
+        
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #004d32;
+        }
+
+        .logo img {
+            width: 40px;
+            margin-right: 8px;
+        }
+
+               .nav-menu {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: space-around;
+            color: #333;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        .nav-menu a:hover {
+            color: #004d32;
+        }
+
+        
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .search-bar input {
+            border: none;
+            background-color: transparent;
+            padding: 5px;
+            outline: none;
+        }
+
+        .search-bar input::placeholder {
+            color: #888;
+        }
+
+        .search-bar button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            color: #888;
+        }
+
+        
+        .account-cart {
+            display: flex;
+            align-items: center;
+        }
+
+        .account-cart div {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .account-cart div:hover {
+            color: #004d32;
+        }
+
+        .account-cart div span {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="left">
+            <span>+01234567890</span>
+            <span>Get 50% Off on Selected Items</span>
+            <span>|</span>
+            <span>Shop Now</span>
+        </div>
+        <div class="right">
+            <span>Eng</span>
+            <span>|</span>
+            <span>Location</span>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="download.png" alt="Shopcart Logo">
+            Shopcart
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+            <a href="#">Categories</a>
+            <a href="#">Deals</a>
+            <a href="#">Sponser</a>
+            <a href="#">Delivery</a>
+        </nav>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search Product">
+            <button>
+                🔍
+            </button>
+        </div>
+
+        <!-- Account and Cart -->
+        <div class="account-cart">
+            <div>
+                <span>👤</span>
+                <span>Account</span>
+            </div>
+            <div>
+                <span>🛒</span>
+                <span>Cart</span>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>

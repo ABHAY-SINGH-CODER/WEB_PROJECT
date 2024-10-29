@@ -4,8 +4,8 @@ function format_changer()
   if(passwordf.type === "password"){
     passwordf.type="text";
   }
-  else{
-    passwordf="password";
+  else if(passwordf.type ==="text"){
+    passwordf.type="password";
   }
 }
 
@@ -15,11 +15,14 @@ function check()
   var username_fix=document.getElementById("username").value;
   var length=password_fix.length;
   console.log(length);
-  if (length < 8 && length!=0) {
+  if (length < 8 && length!=0 &&username_fix.length!=0) {
     alert("password must contain 8 characters.");
   }
   else if(password_fix.length === 0 || username_fix.length === 0){
     alert("please fill the forum!");
+  }
+  else{
+    window.location.href = 'index.html'; 
   }
     
   }

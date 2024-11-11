@@ -29,8 +29,8 @@ function check()
 
   
   const imagePaths = [
-    'image2.jpg',
-    'image3.jpg'
+    'imagee1.webp',
+    'imagee2.webp'
   ]; 
 
   let currentIndex = 0;

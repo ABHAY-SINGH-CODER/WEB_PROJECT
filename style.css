@@ -8,6 +8,8 @@
 
 body {
     line-height: 1.6;
+    background-image: url('imageof.webp');
+    background-size: cover;
 }
 
 header {
@@ -67,6 +69,7 @@ nav ul li a {
 
 body {
     line-height: 1.6;
+    background-color:rgb(46, 44, 44);
 }
 
 /* Exercise Gallery Section */
@@ -116,7 +119,9 @@ body {
 }
 
 .exercise-block:hover {
-    transform: scale(1.05);
+  transform: scale(1.2);
+  
+
 }
 
 .Push-Up{

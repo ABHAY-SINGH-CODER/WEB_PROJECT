@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Developers</title>
+    <style>
+        /* Dark theme background and text colors */
+        body {
+            background-color: #121212;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            gap: 100px;
+            padding: 20px;
+            max-width: 90%;
+            margin: auto;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .card:hover{
+            transform : scale(1.2);
+            transition: 1s ease;
+        }
+
+       
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffcc00;
+            margin-bottom: 15px;
+        }
+        .card h2 {
+            color: #ffcc00;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .card p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Developer Card 1 -->
+        <div class="card">
+            <img src="Screenshot_62.png" alt="Developer 1 Photo">
+            <h2>Abhay Singh</h2>
+            <p><strong>CSE (Computer Scinece Engineering)</strong></p>
+            <p><b>Roll No</b>:24/A01/012<br><b>Contribution:
+
+            </b><ul><li>Login-page</li><li>Home-page</li><li>Js(LOGIC)</li></ul></p>
+        </div>
+
+        <!-- Developer Card 2 -->
+        <div class="card">
+            <img src="aditya.png" alt="Developer 2 Photo">
+            <h2>Aditya Gautam</h2>
+            <p><strong>CSE (Computer Scinece Engineering)</strong></p>
+            <p><b>Roll No</b>:24/A01/029<br><b>Contribution:
+
+            </b><ul><li>Design</li><li>About Page</li><li>Photo-selector and Grid CSS</li></ul></p>
+        </div>
+    </div>
+</body>
+</html>
